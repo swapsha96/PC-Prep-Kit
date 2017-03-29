@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>PC-Prep-Kit</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mdl/material.min.css">
+        <script src="mdl/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- Wide card with share menu button -->
+        <style>
+            body {
+                margin: 0 auto;
+                padding: 0;
+                text-align: center; /* !!! */
+            }
+            .demo-card-wide.mdl-card {
+                margin:0 auto;
+                width: 80%;
+                position: absolute;
+                top:15%;
+                bottom: 15%;
+                left: 0;
+                right: 0;
+                overflow: visible;
+            }
+            .demo-card-wide > .mdl-card__title {
+                color: #fff;
+                position: relative;
+                background: url('../assets/demos/welcome_card.jpg') center / cover;
+                background-color: #3F51B5;
+                height: 250px;
+            }
+            .demo-layout-transparent {
+                background-color: #3F51B5;
+                height: 300px;
+            }
+            .demo-layout-transparent .mdl-layout__header,
+            .demo-layout-transparent .mdl-layout__drawer-button {
+                /* This background is dark, so we set text to white. Use 87% black instead if
+                your background is light. */
+                color: white;
+            }
+        </style>
+
+    </head>
+    <body style="background-color: #F1F1F1">
+        <div class="demo-layout-transparent mdl-layout mdl-js-layout mdl-shadow--8dp">
+        </div>
+        <div class="demo-card-wide mdl-card mdl-shadow--8dp">
+            <img src="img/img1-copy.png" style="width:220px; margin: auto; margin-top: 20px"/>
+            <div class="demo-card-wide mdl-card mdl-shadow--8dp" style="background-color: #F1F1F1; margin-top: 100px; margin-bottom: 50px; text-align: center">
+                <h3>Welcome!</h3>
+                <span style="color: #333333; padding: 20px">The next few activities will help you to get started learning about malaria, your responsibilities as Peace Corp Volunteer, and the ways you can protect yourself.</span>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="border-radius: 5px;font-size: 25px; height: 50px; width: 250px; margin: 0px auto;margin-bottom: 50px">
+              Get Started...
+            </button>
+        </div>
+    </body>
+</html>

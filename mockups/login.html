@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>PC-Prep-Kit</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mdl/material.min.css">
+        <script src="mdl/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- Wide card with share menu button -->
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                text-align: center; /* !!! */
+            }
+            .demo-card-wide.mdl-card {
+                margin:0 auto;
+                width: 512px;
+                position: absolute;
+                top:15%;
+                bottom: 15%;
+                left: 0;
+                right: 0;
+                overflow: visible;
+            }
+            .demo-card-wide > .mdl-card__title {
+                color: #fff;
+                position: relative;
+                background: url('../assets/demos/welcome_card.jpg') center / cover;
+                background-color: #3F51B5;
+                height: 250px;
+            }
+            .welcome-img {
+                width: 50%;
+                position: absolute;
+                bottom: 5px;
+            }
+            .button-sign-in {
+                position: absolute;
+                bottom: 40px;
+                right: -26px;
+            }
+        </style>
+
+    </head>
+    <body style="background-color: #F1F1F1">
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+                <img class="welcome-img" src="img/img2-copy.png" style="left: 10px; bottom: 15px"/>
+                <img class="welcome-img" src="img/img1-copy.png" style="right: -40px; bottom: -40px"/>
+            </div>
+            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                <div class="mdl-tabs__tab-bar">
+                    <a href="#tab1" class="mdl-tabs__tab is-active">Sign In</a>
+                    <a href="#tab2" class="mdl-tabs__tab">Sign Up</a>
+                </div>
+                <form autocomplete="off">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="email">
+                        <label class="mdl-textfield__label" for="addr1">Email</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="password" id="password">
+                        <label class="mdl-textfield__label" for="addr1">Password</label>
+                    </div>
+                    <div>
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1" style="width: 35%">
+                            <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+                            <span class="mdl-checkbox__label">Keep me signed in</span>
+                        </label>
+                        <br/><br/>
+                    </div>
+                    <div>
+                        or <img src="img/g__new_logo.png" style="width: 60px"/>
+                    </div>
+                </form>
+            </div>
+            <!-- Colored FAB button with ripple -->
+            <button class="button-sign-in mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--primary">
+                <i class="material-icons">keyboard_arrow_right</i>
+            </button>
+        </div>
+    </body>
+</html>
