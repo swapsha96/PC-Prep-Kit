@@ -6,18 +6,124 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>PC-Prep-Kit</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="mdl/material.min.css">
         <script src="mdl/material.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- Wide card with share menu button -->
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                text-align: center; /* !!! */
+            }
+            .demo-card-wide.mdl-card {
+                margin:0 auto;
+                width: 512px;
+                position: absolute;
+                top:15%;
+                bottom: 15%;
+                left: 0;
+                right: 0;
+                overflow: visible;
+            }
+            .demo-card-wide > .mdl-card__title {
+                color: #fff;
+                position: relative;
+                background: url('../assets/demos/welcome_card.jpg') center / cover;
+                background-color: #3F51B5;
+                height: 250px;
+            }
+            .cell {
+                padding: 5px;
+            }
+        </style>
+
     </head>
     <body>
-        <!-- Accent-colored raised button with ripple -->
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-          Button
-        </button>
-
+        <!-- Always shows a header, even in smaller screens. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row" style="background-color: white; padding-left: 100px;padding-top: 5x; display: inline-block;">
+                    <img src="img/img3.png" style="height:50px; float: left"/>
+                    <img src="img/img2-copy.png" style="height:50px; float: left"/>
+                    <img src="img/img4-copy.png" style="height:50px; float: left"/>
+                    <div class="mdl-list__item" style="float: right">
+                        <span class="mdl-list__item-primary-content">
+                            <i class="material-icons mdl-list__item-avatar">person</i>
+                            <span>Amy Stepleton </span>
+                        </span>
+                        <i class="material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <!-- Expandable Textfield -->
+                    <form action="#" style="float: right">
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+                                <i class="material-icons" style="color: #000">search</i>
+                            </label>
+                            <div class="mdl-textfield__expandable-holder">
+                              <input class="mdl-textfield__input" type="text" id="sample6">
+                              <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Tabs -->
+                <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                    <a href="#scroll-tab-1" class="mdl-layout__tab">About</a>
+                    <a href="#scroll-tab-2" class="mdl-layout__tab is-active">Dashboard</a>
+                    <a href="#scroll-tab-3" class="mdl-layout__tab">Activities</a>
+                    <a href="#scroll-tab-4" class="mdl-layout__tab">FAQ</a>
+                </div>
+            </header>
+          <main class="mdl-layout__content">
+            <div class="page-content" style="width: 70%; margin: 0 auto;">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col mdl-shadow--6dp cell">
+                        <h3>Meet the Meds</h3>
+                        <hr/>
+                        <div style="text-align: left; color: #666666">Activities > Medications & Labels</div>
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--12-col mdl-shadow--4dp cell" style="display: inline-block; background-color: #f1f1f1; margin-left: 50px; margin-right: 50px">
+                                <div style="float: left">
+                                    <img src="img/activities1.png" style="margin-top: 20px; height: 100px"/>
+                                </div>
+                                <div style="float: right; width: 85%; text-align: left;margin: 10px">
+                                    <div class="mdl-button--accent" style="font-size: 20px;">Mefloquine AKA "Uncle Mef"<br/><br/></div>
+                                    <div>Not everyone gets his jokes, and some people get upset stomach, dizziness and rarely neuro psychiatric effects.<br/>He generates a lot of family gossip and innuendos, but in fact most people can tolerate him just fine.</div>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--12-col mdl-shadow--4dp cell" style="display: inline-block; background-color: #f1f1f1; margin-left: 50px; margin-right: 50px">
+                                <div style="float: left">
+                                    <img src="img/activities2.png" style="margin-top: 20px; margin-left: 15px; height: 100px"/>
+                                </div>
+                                <div style="float: right; width: 85%; text-align: left;margin: 10px">
+                                    <div class="mdl-button--accent" style="font-size: 20px;">Malarone AKA "Princess Mal"<br/><br/></div>
+                                    <div>Not everyone gets his jokes, and some people get upset stomach, dizziness and rarely neuro psychiatric effects.<br/>He generates a lot of family gossip and innuendos, but in fact most people can tolerate him just fine.</div>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--12-col mdl-shadow--4dp cell" style="display: inline-block; background-color: #f1f1f1; margin-left: 50px; margin-right: 50px">
+                                <div style="float: left">
+                                    <img src="img/activities3.png" style="margin-top: 20px; height: 100px"/>
+                                </div>
+                                <div style="float: right; width: 85%; text-align: left;margin: 10px">
+                                    <div class="mdl-button--accent" style="font-size: 20px;">Docycycline AKA "Mama Doxy"<br/><br/></div>
+                                    <div>Not everyone gets his jokes, and some people get upset stomach, dizziness and rarely neuro psychiatric effects.<br/>He generates a lot of family gossip and innuendos, but in fact most people can tolerate him just fine.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-grid" style="width: 10%; margin: 0 auto;">
+                            <i class="material-icons" style="color: #333333">fiber_manual_record</i>
+                            <i class="material-icons" style="color: #999999">fiber_manual_record</i>
+                            <i class="material-icons" style="color: #999999">fiber_manual_record</i>
+                        </div>
+                    </div>
+                </div>
+                <i class="material-icons" style="color: #666666; position: fixed; right: 10px; top: 45%; font-size: 100px;">keyboard_arrow_right</i>
+            </div>
+          </main>
+        </div>
     </body>
 </html>
